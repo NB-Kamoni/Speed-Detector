@@ -15,14 +15,19 @@ document.getElementById('speedForm').addEventListener('submit', function(event) 
   
     let resultMessage = '';
     if (demeritPoints > 0) {
-      resultMessage = `Points: ${demeritPoints}`;
+      resultMessage = `Dimerit Points: ${demeritPoints}`;
       if (demeritPoints >= pointsThresholdForSuspension) {
-        resultMessage += ' (License suspended)';
+        resultMessage += 'Status: (License suspended)';
       }
     } else {
-      resultMessage = 'Ok';
+      resultMessage = 'Status: Ok';
     }
   
     document.getElementById('result').textContent = resultMessage;
   });
+
+  //  Resets the grades for new grading 
+function refreshPage() {
+    window.location.reload();
+}
   

@@ -10,14 +10,18 @@
     <div class="card border-dark mb-3" style="max-width: 18rem;">
         <div class="card-header"><h1>Speed Detector</h1></div>
         <div class="card-body">
-          <h5 class="card-title">Demerit poits based on achieved speed</h5>
+          <h5 class="card-title">Demerit points based on achieved speed</h5>
   <form id="speedForm">
     <label for="speedInput">Speed in Km/h:</label>
     <input type="number" id="speedInput" name="speedInput" required>
     <button type="submit">Get Demerit Points</button>
+    <!-- A reset button  -->
+    <input class="btn btn-primary"  type="reset" value="New Speed" onclick="refreshPage()">
+  
   </form>
   <div id="result"></div>
   <script src="script.js"></script>
+ 
       </div>
 </body>
 </html>
